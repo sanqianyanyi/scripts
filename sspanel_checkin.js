@@ -57,7 +57,7 @@ async function main() {
  */
 function login() {
     return new Promise((resolve) => {
-        $.post(sendPost('auth/login', `email=${$.email}&passwd=${$.pwd}&code=`), (err, response, data) => {
+        $.post(sendPost('auth/loginnew', `email=${$.email}&passwd=${$.pwd}&code=`), (err, response, data) => {
             try {
                 if (err) {
                     console.log(`login API 请求失败\n${JSON.stringify(err)}`)
